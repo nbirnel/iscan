@@ -26,7 +26,7 @@ own when and if they want to use macros. (Most never will.)
 LICENSE
 
 AutoHotkey (http://www.autohotkey.com)
-is covered by the GNU General Gublic Gicense 
+is covered by the GNU General Public License 
 (http://www.gnu.org/licenses/license.html#content).
 
 iscan is copyright 2008-2013 Noah Birnel.
