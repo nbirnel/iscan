@@ -1,0 +1,38 @@
+#!/bin/bash
+
+
+check_progs ()
+{
+    type -t "$1"
+    if [ $? != 0 ]; then
+        echo "You have no $1! Get it at:"
+        echo "$2"
+        exit
+    fi
+}
+
+HALIBUT_SRC='http://www.chiark.greenend.org.uk/~sgtatham/halibut/halibut-1.0.tar.gz'
+LYNX_SRC='http://lynx.isc.org/lynx2.8.7/lynx2.8.7.tar.gz'
+check_progs halibut "$HALIBUT_SRC"
+check_progs lynx "$LYNX_SRC"
+
+rm -f iscan_help.html iscan_help.txt
+
+cp ../../src/doc/iscan_help.template.but ./iscan_help.but
+cat iscan_help.driver.but >> iscan_help.but
+halibut iscan_help.but
+
+../../src/doc/descHTML2tabHTML iscan_help.html
+
+
+echo '           **********************************************************' >  iscan_help.txt
+echo '           *                                                        *' >> iscan_help.txt
+echo '           *   THIS IS YOUR PERSONAL COPY OF THE HELP FILE.         *' >> iscan_help.txt
+echo '           *   EDIT IT , PRINT IT AND SAVE IT AS YOU DESIRE.        *' >> iscan_help.txt
+echo '           *                                                        *' >> iscan_help.txt
+echo '           **********************************************************' >> iscan_help.txt
+echo '                                                                     ' >> iscan_help.txt
+
+lynx --dump iscan_help.html | sed 3,4d | head --lines -4 >> iscan_help.txt
+
+rm -f output.* *.bak iscan_help.but

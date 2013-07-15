@@ -1,0 +1,29 @@
+\C{Ricoh mp1350 Hotkeys}Ricoh mp1350 Hotkeys
+
+\dt wh
+
+\dd display driver's built-in help
+
+\dt ws
+
+\dd save mode
+
+\dt w1-5
+
+\dd select 1st to 5th visible scan mode
+
+\dt w9
+
+\dd scroll scan mode bar to left
+
+\dt w0
+
+\dd scroll scan mode bar to right
+
+\dt we
+
+\dd export (save) all mode settings for scan driver
+
+\dt wi
+
+\dd import (load) all mode settings for scan driver

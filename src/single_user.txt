@@ -1,0 +1,4 @@
+single_user.txt
+
+Delete or rename this file if you want machine-wide installs to be
+able to overwrite your iscan.ahk install.

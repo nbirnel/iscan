@@ -1,0 +1,212 @@
+           **********************************************************
+           *                                                        *
+           *   THIS IS YOUR PERSONAL COPY OF THE HELP FILE.         *
+           *   EDIT IT , PRINT IT AND SAVE IT AS YOU DESIRE.        *
+           *                                                        *
+           **********************************************************
+                                                                     
+
+                       ScanHotKeys help file - iScan.ahk
+
+   This program makes IproScan and the various Twain drivers respond to
+   single stroke keyboard shortcuts. It is meant to make scanning easier
+   and faster.
+
+   Start Scan.ahk after you have started your Twain driver. A window will
+   pop up showing what windows the program intends to send its clicks to.
+   Hit enter or click OK.
+
+   A status bar will show in the upper left hand corner of the screen. It
+   will show that hotkeys are on and superscan is off.
+
+   While hotkeys are on, your keyboard strokes are interpretted as the
+   list below. YOU CAN'T DO ANY DATA ENTRY, SO LEARN THE WINDOWS-[
+   COMMAND FIRST. (That's the one that toggles the hotkeys on and off.)
+
+   There is no need to learn >all< of these shortcuts. Start off learning
+   how to toggle the hotkeys on and off, superscan, the document breaks,
+   and how to quit the program. That might be all you ever want to use.
+   You can still use the mouse.
+
+Section 1: General Hotkeys
+
+  1.1 Run
+
+   ZQ quit
+   ZZ "super-quit" - exit hotkeys, close twain driver and iproscan
+   Win-[ toggle hotkeys on / off
+   \ toggle Super-scan on / off. When on, affected hotkeys will also
+   scan, and spacebar will add a doc break and scan.
+   C-s repeat startup - DO THIS AFTER STARTING A DIFFERENT BATCH OR YOUR
+   HOTKEYS WON'T WORK
+   A-s start scan (ie start TWAIN driver)
+
+  1.2 Help
+
+   ?   display help
+   C-/ display help as plain text
+   w?  display scanner-specific help
+   v   display version
+
+Section 2: Scanner Driver Hotkeys
+
+  2.1 Scan
+
+   Space scan - ADDS A DOC BREAK WHEN SUPERSCAN IS ON! (use n to avoid
+   this)
+   S-Space preview
+
+  2.2 Contrast
+
+   = Brightness up by 10, Contrast down by 10
+   - Brightness down by 10, Contrast up by 10
+
+    2.2.1 Numberpad keys
+
+   +   Brightness up by 1, Threshold down by 1
+   -   Brightness down by 1, Threshold up by 1
+   *   Brightness up by 5, Threshold down by 5
+   /   Brightness down by 5, Threshold up by 5
+   0-9 Darkest through lightest (reasonable) settings
+
+  2.3 Feed
+
+   e exposure glass
+   a use adf
+   s single sided
+   t duplex top to top
+   r duplex reversed
+   , toggle Start From Scanner
+
+  2.4 Orientation
+
+   Up    orientation 0 (rightside up)
+   Down  orientation 180 (upside down)
+   Left  orientation left 90
+   Right orientation right 90
+
+  2.5 Modes
+
+   FnKey   modes 1-12
+   S-FnKey modes 13-24
+
+Section 3: Scan Panel Hotkeys
+
+  3.1 Breaks
+
+   u   source </td> <td>            can use SuperScan
+   b   box </td> <td>               can use SuperScan
+   f   folder </td> <td>            can use SuperScan
+   d   parent doc </td> <td>        can use SuperScan
+   c   child </td> <td>             can use SuperScan
+   n   no doc break </td> <td>      can use SuperScan
+   S-d sticky parent doc </td> <td> can use SuperScan
+   S-c sticky child doc </td> <td>  can use SuperScan
+
+  3.2 Image key
+
+   i   modify key, and suspend hotkeys
+   ]   increment next suffix </td> <td> can use SuperScan
+   [   decrement next suffix </td> <td> can use SuperScan
+   S-] sticky suffix </td> <td>         can use SuperScan
+
+  3.3 Flags
+
+   1-0    hotkeys 1-10 </td> <td>         can use SuperScan
+   A-1-0  hotkeys 11-20 </td> <td>        can use SuperScan
+   C-1-0  hotkeys 21-30 </td> <td>        can use SuperScan
+   S-1-0  sticky hotkeys 1-10 </td> <td>  can use SuperScan
+   SA-1-0 sticky hotkeys 11-20 </td> <td> can use SuperScan
+   SC-1-0 sticky hotkeys 21-30 </td> <td> can use SuperScan
+   g'     code, and suspend hotkeys
+
+  3.4 Go to
+
+   go   goto, and suspend hotkeys
+   k    up one page in history
+   j    down one page in history
+   l    up one screenfull of history
+   h    down one screenfull of history
+   gt   go to the Top of the history window
+   gb   go to the Bottom of the history window
+   gn   Next 100 pages of history
+   gp   Previous 100 pages of history
+   gl   Last page of history
+   gf   First page of history
+   g1-5 Go to 1st, 2nd etc line of history window
+
+  3.5 Change
+
+   C-Space rescan selected page </td> <td>                   can use SuperScan
+   x       delete last scanned page
+   X       delete one or more pages
+   C-x     mark selected page for deletion
+   C-u     modify doc break of selected page to source
+   C-b     modify doc break of selected page to box
+   C-f     modify doc break of selected page to folder
+   C-d     modify doc break of selected page to parent doc
+   C-c     modify doc break of selected page to child
+   C-n     modify doc break of selected page to no doc break
+   C-'     add coding to selected page
+
+  3.6 Misc
+
+   o       open import dialog and suspend hotkeys
+   O       import all
+   A-o     IPRO Scan options
+   PP      toggle "use prep sheets"
+   PB      toggle "remove blank pages"
+   PI      toggle "invert images"
+   PK      toggle "deskew"
+   PO      toggle "remove black border"
+   PS      toggle "despeckle"
+   z       toggle Zoom
+   C-Left  rotate left Ipro
+   C-Right rotate right Ipro
+   S-Left  sticky rotate left Ipro
+   S-Right sticky rotate right Ipro
+   S-\     toggle Auto Detect Color
+
+Section 4: Specialty Hotkeys
+
+  4.1 Macros
+
+   q run a q macro. Available macros are a-z, 0-9, and the characters
+   []_?@#$
+   m run an m macro. Available macros are a-z, 0-9, and the characters
+   []_?@#$
+   p run a p macro. Available macros are a-z, 0-9, and the characters
+   []_?@#$
+   Win-q edit macros. RUN Win-r AFTER CHANGING MACROS TO MAKE THE NEW
+   ONES TAKE EFFECT.
+   Win-s import a standard set of macros, overwriting current macros
+   Win-i import a custom set of macros, overwriting current macros
+   Win-e export a custom set of macros
+   Win-o show macro library in Windows Explorer
+
+  4.2 Misc
+
+   w run a driver command. Available commands are a-z, 0-9 and the
+   characters []_?@#$
+   / refresh import window
+   A-x delete all in import directory
+   A-b show the current batch directory in Windows Explorer.
+   . repeat last command line - bash, console or cmd in that order
+   ' pass text to command line shell
+   : pass control to command line shell and suspend hotkeys
+
+Section 5: Debugging Tools
+
+   Win-r reload script
+   V     show a bunch of debugging information
+
+Section 6: Ricoh mp1350 Hotkeys
+
+   wh   display driver's built-in help
+   ws   save mode
+   w1-5 select 1st to 5th visible scan mode
+   w9   scroll scan mode bar to left
+   w0   scroll scan mode bar to right
+   we   export (save) all mode settings for scan driver
+   wi   import (load) all mode settings for scan driver
+     _________________________________________________________________

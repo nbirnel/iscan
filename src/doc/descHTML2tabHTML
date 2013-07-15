@@ -1,0 +1,48 @@
+#!/usr/bin/perl
+
+# descHTML2tabHTML
+# Noah Birnel 2009
+
+# converts dl dt dd (description tags) to table tr td (table tags)
+# useful to take the booklike html output of halibut and convert to 
+# a more list-like format.
+
+use warnings;
+
+# input like this 
+#<dl>
+#<dt> thing
+#<\dt>
+#<dd> description
+#<\dd>
+#<\dl>
+
+
+
+# output like this
+#<TABLE BORDER=0 CELLPADDING=2 CELLSPACING=2>
+#<TR>
+#		<TD>
+#			<FONT COLOR="#ff0000"><B>   thing   </B></FONT>
+#		</TD>
+#		<TD>
+#			description
+#		</TD>
+#	</TR>
+#</TABLE>
+
+$^I = ".bak";
+
+while (defined($line = <>)) {
+    chomp($line);
+    $line =~ s|<dl>|<table border=0 cellpadding=4 cellspacing=4>\n|;
+    $line =~ s|<dt>|<tr><td><font color="#ff0000"><b>|;
+    $line =~ s|</dt>|</b></font></td>|;
+    $line =~ s|<dd>|<td>|;
+    $line =~ s|</dd>|</td></tr>|;
+    $line =~ s|</dl>|</table>|;
+    $line =~ s|can use SuperScan|\n</td>\n<td>\ncan use SuperScan|;
+    $line =~ s|</h1>|</h1>\n<ul><li><p><a href="iscan_help.txt">Plain text version</a></p></ul>\n|;
+    print "$line\n";
+}
+

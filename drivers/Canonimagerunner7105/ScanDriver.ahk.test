@@ -1,0 +1,195 @@
+WinWait, Network ScanGear, 
+IfWinNotActive, Network ScanGear, , WinActivate, Network ScanGear, 
+WinWaitActive, Network ScanGear, 
+MouseClick, left,  428,  44
+Sleep, 100
+MouseClick, left,  610,  74
+Sleep, 100
+MouseClick, left,  554,  93
+Sleep, 100
+MouseClick, left,  612,  75
+Sleep, 100
+MouseClick, left,  547,  106
+Sleep, 100
+MouseClick, left,  612,  75
+Sleep, 100
+MouseClick, left,  541,  119
+Sleep, 100
+MouseClick, left,  611,  74
+Sleep, 100
+MouseClick, left,  554,  134
+Sleep, 100
+MouseClick, left,  380,  42
+Sleep, 100
+MouseClick, left,  611,  75
+Sleep, 100
+MouseClick, left,  557,  94
+Sleep, 100
+MouseClick, left,  611,  73
+Sleep, 100
+MouseClick, left,  544,  107
+Sleep, 100
+MouseClick, left,  612,  131
+Sleep, 100
+MouseClick, left,  549,  149
+Sleep, 100
+MouseClick, left,  612,  134
+Sleep, 100
+MouseClick, left,  558,  163
+Sleep, 100
+MouseClick, left,  613,  131
+Sleep, 100
+MouseClick, left,  556,  176
+Sleep, 100
+MouseClick, left,  611,  134
+Sleep, 100
+MouseClick, left,  561,  191
+Sleep, 100
+MouseClick, left,  611,  130
+Sleep, 100
+MouseClick, left,  549,  202
+Sleep, 100
+MouseClick, left,  612,  130
+Sleep, 100
+MouseClick, left,  555,  215
+Sleep, 100
+MouseClick, left,  611,  131
+Sleep, 100
+MouseClick, left,  545,  228
+Sleep, 100
+WinWait, Different Sizes, 
+IfWinNotActive, Different Sizes, , WinActivate, Different Sizes, 
+WinWaitActive, Different Sizes, 
+MouseClick, left,  20,  77
+Sleep, 100
+MouseClick, left,  72,  118
+Sleep, 100
+MouseClick, left,  203,  217
+Sleep, 100
+WinWait, Network ScanGear, 
+IfWinNotActive, Network ScanGear, , WinActivate, Network ScanGear, 
+WinWaitActive, Network ScanGear, 
+MouseClick, left,  615,  158
+Sleep, 100
+MouseClick, left,  559,  178
+Sleep, 100
+MouseClick, left,  611,  158
+Sleep, 100
+MouseClick, left,  563,  190
+Sleep, 100
+MouseClick, left,  613,  159
+Sleep, 100
+MouseClick, left,  559,  203
+Sleep, 100
+MouseClick, left,  499,  184
+Sleep, 100
+MouseClick, left,  498,  182
+Sleep, 100
+MouseClick, left,  548,  210
+Sleep, 100
+WinWait, Orientation, 
+IfWinNotActive, Orientation, , WinActivate, Orientation, 
+WinWaitActive, Orientation, 
+MouseClick, left,  129,  106
+Sleep, 100
+MouseClick, left,  196,  107
+Sleep, 100
+MouseClick, left,  128,  177
+Sleep, 100
+MouseClick, left,  198,  176
+Sleep, 100
+MouseClick, left,  53,  304
+Sleep, 100
+MouseClick, left,  150,  305
+Sleep, 100
+MouseClick, left,  55,  337
+Sleep, 100
+WinWait, Network ScanGear, 
+IfWinNotActive, Network ScanGear, , WinActivate, Network ScanGear, 
+WinWaitActive, Network ScanGear, 
+MouseClick, left,  556,  239
+Sleep, 100
+MouseClick, left,  530,  257
+Sleep, 100
+MouseClick, left,  553,  238
+Sleep, 100
+MouseClick, left,  526,  269
+Sleep, 100
+MouseClick, left,  577,  241
+Sleep, 100
+Send, {DEL}100
+MouseClick, left,  611,  274
+Sleep, 100
+MouseClick, left,  551,  291
+Sleep, 100
+MouseClick, left,  500,  331
+Sleep, 100
+MouseClick, left,  500,  331
+Sleep, 100
+MouseClick, left,  498,  323
+Sleep, 100
+MouseClick, left,  506,  324
+Sleep, 100
+MouseClick, left,  506,  324
+Sleep, 100
+MouseClick, left,  502,  324
+Sleep, 100
+MouseClick, left,  502,  324
+Sleep, 100
+MouseClick, left,  608,  329
+Sleep, 100
+MouseClick, left,  608,  329
+Sleep, 100
+MouseClick, left,  608,  329
+Sleep, 100
+MouseClick, left,  608,  329
+Sleep, 100
+MouseClick, left,  501,  332
+Sleep, 100
+MouseClick, left,  501,  329
+Sleep, 100
+MouseClick, left,  509,  329
+Sleep, 100
+MouseClick, left,  509,  329
+Sleep, 100
+MouseClick, left,  509,  329
+Sleep, 100
+MouseClick, left,  499,  330
+Sleep, 100
+MouseClick, left,  504,  330
+Sleep, 100
+MouseClick, left,  504,  330
+Sleep, 100
+MouseClick, left,  608,  328
+Sleep, 100
+MouseClick, left,  608,  328
+Sleep, 100
+MouseClick, left,  608,  328
+Sleep, 100
+MouseClick, left,  608,  328
+Sleep, 100
+MouseClick, left,  608,  328
+Sleep, 100
+MouseClick, left,  608,  328
+Sleep, 100
+MouseClick, left,  608,  328
+Sleep, 100
+MouseClick, left,  589,  328
+Sleep, 100
+MouseClick, left,  574,  328
+Sleep, 100
+MouseClick, left,  560,  328
+Sleep, 100
+MouseClick, left,  609,  277
+Sleep, 100
+MouseClick, left,  553,  303
+Sleep, 100
+MouseClick, left,  97,  39
+Sleep, 100
+MouseClick, left,  128,  39
+Sleep, 100
+WinWait, Network ScanGear Help, 
+IfWinNotActive, Network ScanGear Help, , WinActivate, Network ScanGear Help, 
+WinWaitActive, Network ScanGear Help, 
+MouseClick, left,  659,  10
+Sleep, 100

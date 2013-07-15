@@ -1,0 +1,170 @@
+The scripting language is AutoHotKey (www.autohotkey.com). It's not so hot,
+but all the gui-extracting stuff is built right in, so it's what I chose.
+
+The biggest need is for drivers for more machines. There's a template for
+making new ones. The idea is to have scan.ahk make a completely bare function
+call to scan_driver.ahk: 
+
+ pubFnBrightness0()
+
+and have that function be something specific for that driver. You can still
+call the general-purpose functions in scan.ahk from the driver - just 
+never call anything not labelled pubFn from outside the driver. 
+
+Documentation is created by editing doc/iscan_help.but and running ./makeDoc. 
+You need halibut, perl, lynx, and bash. I think all of these are available on 
+Windows, but the simplest solution is to do it on a Unix box.
+
+Halibut creates chm files, but I am deliberately not using them since many
+systems don't allow them to be read. 
+
+
+KNOWN BUGS
+------------------------------------------------------------------------
+
+Super-quit fails to exit properly if twain driver is not open. 
+No warnings if one is working with the "wrong" windows.
+
+
+CHANGELOG
+------------------------------------------------------------------------
+
+ver 0.3
+-------
+Fixed a few typos in help messages.
+Added edit macros.
+Added help for macros.
+Added autocreation of personal macro library.
+Added reload standard macros
+Added open macro library in windows explorer
+Added import and export custom macro libraries
+Added Numberpad contrast shortcuts
+
+ver 0.4
+-------
+Changed macros to #include rather than functions
+Fixed the multi-machine installer to check for All Users.WINDOWS
+
+ver 0.5
+-------
+Created a single machine installer
+Created a single user installer
+Factored out screen resolution
+
+ver0.6
+------
+Factored out the whole twain driver section
+Installers now include scan_driver and driver directory
+Win-d to load different driver. (Not yet tested)
+
+ver0.7
+------
+Added a driver check.
+Made d always turn off sticky docs.
+Factored out about 50 lines of code.
+Added more info to statusbar.
+Switched quit and superquit.
+Switched import and superimport.
+Commented out command to load different driver.
+    Nice idea, but the method doesn't work.
+Added arbitrary driver commands c-num0 to num9, and c-, c-.
+Workarounds for a few ipro bugs 
+
+ver0.71
+-------
+Added g, z prefixes
+Changed macros to q prefix
+
+ver0.72
+-------
+factored out titlebar width
+
+ver0.83
+-------
+HTML help
+documentation production script
+doc break and option changes now return cursor to origin
+
+ver0.84
+-------
+added ipro option commands P
+added shell pass-through commands ' and :
+removed pop-up warnings for nonextant driver functions and macros (they were just confusing people)
+
+ver0.86
+-------
+alphabetized and renamed toolkit functions
+
+ver0.87
+-------
+some clean-up
+
+ver0.88
+-------
+more clean-up
+added drop colors for ricoh 1357
+factored out toolkit goto (g)
+factored out toolkit option (!o)
+factored out toolkit quit (Z)
+corrected for new ipro release
+
+ver0.89
+-------
+removed all superscan bindings except for doc breaks and Space
+added NumPadEnter=Click
+more new ipro corrections
+vim abbreviations for macro file
+
+ver0.90
+-------
+separated editor, macro editor, text viewer
+optimized fnHistoryTop to see if we're in position already
+color type hotkeys, now that auto-detect color is gone from ipro
+
+ver0.92
+-------
+Added user-defined string support
+Added pad zero function
+Added vim macros for macro editing
+Added header file to factor out x,y coords.
+Added open image key window and close it.
+Added "smartness" to modify image key command.
+
+ver0.93
+-------
+Bug fixes - hotkeys wait their turn
+          - preview window identified by regexp, not "else"
+
+ver0.94
+-------
+Bug fixes - nonextant windows time out and kill thread after 5secs
+            (fixes bug introduced in .93)
+Goto coding should now return to hotkeys
+Removed extraneous 'ExitGracefully' function
+
+ver0.95
+-------
+multi-key inputs now time out and kill thread after 2 secs
+[ and ] macros removed for Autohotkey_L compatibility
+
+TODO
+------------------------------------------------------------------------
+<td> bug in help
+Refactor the whole make sequence
+Add : command and :! shell escapes
+    command completion? How to expose tk to user?
+alphabetize and rename iscan_fns - turn into an ahk library?
+Add "smartness" to goto command and others which suspend hotkeys.
+GoToSuspend
+ImportDialog
+
+Make w-e (export driver settings) create it's export folder if absent.
+Port to other scanners. 
+Make a good INSTALL manual.
+Better installers, and a multi-machine installer
+Automated install of autohotkey
+   http://www.autohotkey.com/forum/viewtopic.php?t=1867
+make hotkeys inactive when scan window closes?
+rc or ini files would allow compilation. 
+fix bug in help-maker 
+something is wrong with overwriting the local files - not happening

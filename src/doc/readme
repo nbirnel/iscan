@@ -1,0 +1,19 @@
+This is not where the documentation is kept. This is where the source for 
+documentation is kept.
+
+To get the actual documentation, go to the appropriate driver directory.
+
+To update documentation for a new TWAIN driver:
+
+    1 Edit the iscan_help.driver.but in the driver directory
+    2 Run make
+
+makeDoc depends on halibut, perl, lynx, bash, and the script descHTML2tabHTML.
+Halibut can be found at 
+    http://www.chiark.greenend.org.uk/~sgtatham/halibut/
+Perl, lynx, make and bash are preinstalled on most sane systems, and can be easily
+enough installed on Windows and OS X systems.
+
+This assumes you are using Cygwin on Windows. Otherwise - figure it out
+yourself.
+

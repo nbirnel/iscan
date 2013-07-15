@@ -1,0 +1,17 @@
+    WinGet, Win_Array, List, ahk_class ThunderRT6FormDC
+    loop %Win_Array%
+    {
+        winid := Win_Array%A_Index% 
+        WinGetTitle, window, ahk_id %winid%
+        ifInString, window, %scan%
+            scanid = %winid%
+        else ifInString, window, PREPFLAG
+            prepflagid = %winid%
+        else ifInString, window, Zoom
+            zoomid = %winid%
+        else ifInString, window, Extended
+            extendid = %winid%
+        else 
+            previewid = %winid%
+    }
+

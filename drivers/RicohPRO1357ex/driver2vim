@@ -1,0 +1,3 @@
+#!/bin/sh
+
+sed -n 's/^ScanDriver_w\(.\)().*/iab d\1 ScanDriver_w\1()    ; w\1/p' ScanDriver.ahk

@@ -1,0 +1,626 @@
+\cfg{html-single-filename}{iscan_help.html}
+
+\cfg{chapter}{Section}
+
+\cfg{html-leaf-level}{0}
+
+\cfg{text-filename}{iscan_help.txt}
+
+\title ScanHotKeys help file  -  iScan.ahk
+
+   This program makes IproScan and the various Twain drivers respond to
+   single stroke keyboard shortcuts. It is meant to make scanning easier
+   and faster.
+
+   Start Scan.ahk after you have started your Twain driver. A window will
+   pop up showing what windows the program intends to send its clicks to.
+   Hit enter or click OK.
+
+   A status bar will show in the upper left hand corner of the screen. It
+   will show that hotkeys are on and superscan is off.
+
+   While hotkeys are on, your keyboard strokes are interpretted as the
+   list below. YOU CAN'T DO ANY DATA ENTRY, SO LEARN THE WINDOWS-[ COMMAND
+   FIRST. (That's the one that toggles the hotkeys on and off.)
+
+   There is no need to learn >all< of these shortcuts. Start off learning
+   how to toggle the hotkeys on and off, superscan, the document breaks,
+   and how to quit the program. That might be all you ever want to use.
+   You can still use the mouse.
+
+\C{General Hotkeys}General Hotkeys
+
+\H{run}Run
+
+\dt ZQ
+
+\dd quit
+
+\dt ZZ
+
+\dd "super-quit" - exit hotkeys, close twain driver and iproscan
+
+\dt Win-[
+
+\dd toggle hotkeys on / off
+
+\dt \\
+
+\dd toggle Super-scan on / off. When on, affected hotkeys will also 
+                 scan, and spacebar will add a doc break and scan.
+
+\dt C-s
+
+\dd repeat startup - DO THIS AFTER STARTING A DIFFERENT BATCH OR YOUR HOTKEYS WON'T WORK
+
+\dt A-s
+
+\dd start scan (ie start TWAIN driver)
+
+\H{help}Help
+
+\dt ?
+
+\dd display help
+
+\dt C-/
+
+\dd display help as plain text
+
+\dt w?
+
+\dd display scanner-specific help
+
+\dt v
+
+\dd display version
+
+
+\C{Scanner Driver Hotkeys}Scanner Driver Hotkeys
+
+\H{scan}Scan
+
+\dt Space
+
+\dd scan    - ADDS A DOC BREAK WHEN SUPERSCAN IS ON! (use n to avoid this)
+
+\dt S-Space
+
+\dd preview
+
+\H{contrast}Contrast
+
+\dt =
+
+\dd Brightness up by 10, Contrast down by 10
+
+\dt -
+
+\dd Brightness down by 10, Contrast up by 10
+
+\S{numberpad}Numberpad keys
+
+\dt +
+
+\dd Brightness up by 1, Threshold down by 1
+
+\dt -
+
+\dd Brightness down by 1, Threshold up by 1
+
+\dt *
+
+\dd Brightness up by 5, Threshold down by 5
+
+\dt /
+
+\dd Brightness down by 5, Threshold up by 5
+
+\dt 0-9
+
+\dd Darkest through lightest (reasonable) settings
+
+\H{feed}Feed
+
+\dt e
+
+\dd exposure glass
+
+\dt a
+
+\dd use adf
+
+\dt s
+
+\dd single sided
+
+\dt t
+
+\dd duplex top to top
+
+\dt r
+
+\dd duplex reversed
+
+\dt ,
+
+\dd toggle Start From Scanner
+
+\H{orientation}Orientation
+
+\dt Up
+
+\dd orientation 0 (rightside up)
+
+\dt Down
+
+\dd orientation 180 (upside down)
+
+\dt Left
+
+\dd orientation left 90
+
+\dt Right
+
+\dd orientation right 90
+
+
+\H{modes}Modes
+
+\dt FnKey
+
+\dd modes 1-12
+
+\dt S-FnKey
+
+\dd modes 13-24
+
+\C{Scan Panel Hotkeys}Scan Panel Hotkeys
+
+\H{breaks}Breaks
+
+\dt u
+
+\dd source                                            
+</td>
+<td>
+can use SuperScan
+
+\dt b
+
+\dd box                                               
+</td>
+<td>
+can use SuperScan
+
+\dt f
+
+\dd folder                                            
+</td>
+<td>
+can use SuperScan
+
+\dt d
+
+\dd parent doc                                        
+</td>
+<td>
+can use SuperScan
+
+\dt c
+
+\dd child                                             
+</td>
+<td>
+can use SuperScan
+
+\dt n
+
+\dd no doc break                                      
+</td>
+<td>
+can use SuperScan
+
+\dt S-d
+
+\dd sticky parent doc                                 
+</td>
+<td>
+can use SuperScan
+
+\dt S-c
+
+\dd sticky child doc                                  
+</td>
+<td>
+can use SuperScan
+
+\H{image key}Image key
+
+\dt i
+
+\dd modify key, and suspend hotkeys
+
+\dt S-i
+
+\dd modify key
+
+\dt C-i
+
+\dd close modify key window
+
+\dt SA1-7
+
+\dd Apply user string 1-7 to image key field 1-7. (Open with S-i first.)
+
+\dt ]
+
+\dd increment next suffix                             
+
+\dt [
+
+\dd decrement next suffix                             
+
+\dt S-]
+
+\dd sticky suffix                                     
+
+
+\H{flags}Flags
+
+\dt S-f1-150
+
+\dd hotkeys 1-150
+
+\dt S-e
+
+\dd open extended issue tags window
+
+\dt 1-0
+
+\dd hotkeys 1-10                                      
+
+\dt A-1-0
+
+\dd hotkeys 11-20                                     
+
+\dt C-1-0
+
+\dd hotkeys 21-30                                     
+
+\dt S-1-0
+
+\dd sticky hotkeys 1-10                               
+
+\dt SA-1-0
+
+\dd sticky hotkeys 11-20                              
+
+\dt SC-1-0
+
+\dd sticky hotkeys 21-30                              
+
+\dt g'
+
+\dd code, and suspend hotkeys
+
+\H{go to}Go to
+
+\dt go
+
+\dd goto, and suspend hotkeys
+
+\dt k
+
+\dd up one page in history
+
+\dt j
+
+\dd down one page in history
+
+\dt l
+
+\dd up one screenfull of history
+
+\dt h
+
+\dd down one screenfull of history
+
+\dt gt
+
+\dd go to the Top of the history window
+
+\dt gb
+
+\dd go to the Bottom of the history window
+
+\dt gn
+
+\dd Next 100 pages of history
+
+\dt gp
+
+\dd Previous 100 pages of history
+
+\dt gl
+
+\dd Last page of history
+
+\dt gf
+
+\dd First page of history
+
+\dt g1-5
+
+\dd Go to 1st, 2nd etc line of history window
+
+\H{change}Change
+
+\dt C-Space
+
+\dd rescan selected page                              
+
+\dt x
+
+\dd delete last scanned page
+
+\dt X
+
+\dd delete one or more pages
+
+\dt C-x
+
+\dd mark selected page for deletion
+
+\dt C-u
+
+\dd modify doc break of selected page to source
+
+\dt C-b
+
+\dd modify doc break of selected page to box
+
+\dt C-f
+
+\dd modify doc break of selected page to folder
+
+\dt C-d
+
+\dd modify doc break of selected page to parent doc
+
+\dt C-c
+
+\dd modify doc break of selected page to child
+
+\dt C-n
+
+\dd modify doc break of selected page to no doc break
+
+\dt C-'
+
+\dd add coding to selected page
+
+\H{misc scan panel}Misc
+
+\dt o
+
+\dd open import dialog and suspend hotkeys
+
+\dt O
+
+\dd import all
+
+\dt A-o
+
+\dd IPRO Scan options
+
+\dt PP
+
+\dd toggle "use prep sheets"
+
+\dt PB
+
+\dd toggle "remove blank pages"
+
+\dt PI
+
+\dd toggle "invert images"
+
+\dt PK
+
+\dd toggle "deskew"
+
+\dt PO
+
+\dd toggle "remove black border"
+
+\dt PS
+
+\dd toggle "despeckle"
+
+\dt z
+
+\dd toggle Zoom
+
+\dt C-Left
+
+\dd rotate left Ipro
+
+\dt C-Right
+
+\dd rotate right Ipro
+
+\dt S-Left
+
+\dd sticky rotate left Ipro
+
+\dt S-Right
+
+\dd sticky rotate right Ipro
+
+\dt ZB
+
+\dd color settings: black and white
+
+\dt ZH
+
+\dd color settings: color high quality
+
+\dt ZM
+
+\dd color settings: color medium quality
+
+\dt ZL
+
+\dd color settings: color low quality
+
+\dt Zh
+
+\dd color settings: gray high quality
+
+\dt Zm
+
+\dd color settings: gray medium quality
+
+\dt Zl
+
+\dd color settings: gray low quality
+
+\C{Specialty Hotkeys}Specialty Hotkeys
+
+\H{strings}User Strings
+
+\dt SP0-9
+
+\dd Edit prefix for user string 0-9
+         
+\dt SS0-9
+
+\dd Edit suffix for user string 0-9
+         
+\dt SN0-9
+
+\dd Edit number for user string 0-9
+         
+\dt SR0-9
+
+\dd Restart number at 1 for user string 0-9
+         
+\dt SZ0-9
+
+\dd Restart number at 0 for user string 0-9
+         
+\dt S+0-9
+
+\dd Increment number by 1 for user string 0-9
+         
+\dt S-0-9
+
+\dd Decrement number by 1 for user string 0-9
+         
+\dt SF0-9
+
+\dd Set zero-padding format of number for user string 0-9
+         
+\H{macros}Macros
+
+\dt q
+
+\dd run a q macro. Available macros are a-z, 0-9, and the characters _?@#$
+         
+\dt m
+
+\dd run an m macro. Available macros are a-z, 0-9, and the characters _?@#$
+
+\dt p
+
+\dd run a p macro. Available macros are a-z, 0-9, and the characters _?@#$
+
+\dt Win-q
+
+\dd edit macros. RUN Win-r AFTER CHANGING MACROS TO MAKE THE NEW ONES TAKE EFFECT.
+
+\dt Win-s
+
+\dd import a standard set of macros, overwriting current macros
+
+\dt Win-i
+
+\dd import a custom set of macros, overwriting current macros
+
+\dt Win-e
+
+\dd export a custom set of macros
+
+\dt Win-o
+
+\dd show macro library in Windows Explorer
+
+\H{misc specialty}Misc
+
+\dt MA
+
+\dd move all in "hold" directory to "scan" directory
+
+\dt Mf
+
+\dd move first in "hold" directory to "scan" directory
+
+\dt MF
+
+\dd move first in "hold" directory to "scan" directory, with parent prep sheets
+
+\dt Mr
+
+\dd move an image in "repo" directory to "scan" directory
+
+\dt MR
+
+\dd move an image in "repo" directory to "scan" directory,  with parent prep sheets
+
+\dt MS
+
+\dd move all in "scan" directory to "hold" directory
+
+\dt w
+
+\dd run a driver command. Available commands are a-z, 0-9 and the characters _?@#$
+
+\dt /
+
+\dd refresh import window
+
+\dt A-x
+
+\dd delete all in import directory
+
+\dt A-b
+
+\dd show the current batch directory in Windows Explorer. 
+
+\dt .
+
+\dd repeat last command line - bash, console or cmd in that order
+
+\dt '
+
+\dd pass text to command line shell
+
+\dt :
+
+\dd pass control to command line shell and suspend hotkeys
+
+\dt Numpad Dot
+
+\dd Click once
+
+\C{Debugging Tools}Debugging Tools
+
+\dt Win-r
+
+\dd reload script
+
+\dt V
+
+\dd show a bunch of debugging information
+

@@ -1,0 +1,75 @@
+#!/bin/sh
+
+echo "set iskeyword+=-,+,=" > imacro.vim 
+
+sed 's/::\([^:]\)/DOES\1/' keybindings.ahk |
+awk '
+BEGIN { FS = "DOES" }
+
+NR > 5 { 
+    key = $1
+    cmd = $2
+    abb = abbrev(key)
+    human = translate(key)
+    if (cmd !~ /^toolkit_.Commands()/)
+        print("iab " abb " " cmd "      ; " human)
+}
+
+function abbrev(key) {
+    sub(/Space/, "Sp", key)
+    sub(/Up/, "Up", key)
+    sub(/Down/, "Dn", key)
+    sub(/Left/, "L", key)
+    sub(/Right/, "R", key)
+    sub(/#/,  "WI", key)
+    sub(/\^/, "CO", key)
+    sub(/!/,  "AL", key)
+    sub(/\+/, "SH", key)
+    sub(/NumpadAdd/, "N+", key)
+    sub(/NumpadSub/, "N-", key)
+    sub(/NumpadMult/, "N*", key)
+    sub(/NumpadDiv/, "N/", key)
+    sub(/NumpadEnter/, "NE", key)
+    sub(/Numpad/, "N", key)
+    return key
+}
+
+function translate(key) {
+    sub(/#/,  "Win-", key)
+    sub(/\^/, "Ctl-", key)
+    sub(/!/, "Alt-", key)
+    sub(/\+/, "Shift-", key)
+    return key
+}
+' >> imacro.vim
+
+awk '
+    /^toolkit_.Commands()/ { 
+        infunc = "yes" 
+        pref = $1
+        sub(/toolkit_/, "", pref)
+        sub(/Commands\(\).*/, "", pref)
+    }
+    /^}/ { infunc = "no" }
+    infunc == "yes" && /if User_Input = / {
+        nextl = NR + 1
+        suff = $0
+        sub(/.* if User_Input = /, "", suff)
+    }
+    NR == nextl { 
+        sub(/[ \t]*/, "")
+        print("iab " pref suff " " $0 "    ; " pref suff)
+    }
+' toolkit.raw.ahk >> imacro.vim
+
+# ahk uses ` as escape, so we need to throw it away... sigh...
+# ScanDriver w| breaks vim, so we need to escape it... sigh... 
+
+sed -n '
+    /^ScanDriver_w`\?.()/ {
+        s/^ScanDriver_w`\?\(.\)().*/iab w\1 ScanDriver_w\1()    ; w\1/
+        s/|/\\|/g
+        p
+    }
+    ' DRIVER_TEMPLATE/scan_driver_template.ahk >> imacro.vim
+

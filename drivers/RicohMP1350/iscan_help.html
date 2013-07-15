@@ -1,0 +1,813 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=US-ASCII">
+<title>ScanHotKeys help file - iScan.ahk</title>
+</head>
+<body>
+<h1>ScanHotKeys help file - iScan.ahk</h1>
+<ul><li><p><a href="iscan_help.txt">Plain text version</a></p></ul>
+
+<p>
+This program makes IproScan and the various Twain drivers respond to single stroke keyboard shortcuts. It is meant to make scanning easier and faster.
+</p>
+<p>
+Start Scan.ahk after you have started your Twain driver. A window will pop up showing what windows the program intends to send its clicks to. Hit enter or click OK.
+</p>
+<p>
+A status bar will show in the upper left hand corner of the screen. It will show that hotkeys are on and superscan is off.
+</p>
+<p>
+While hotkeys are on, your keyboard strokes are interpretted as the list below. YOU CAN'T DO ANY DATA ENTRY, SO LEARN THE WINDOWS-[ COMMAND FIRST. (That's the one that toggles the hotkeys on and off.)
+</p>
+<p>
+There is no need to learn &gt;all&lt; of these shortcuts. Start off learning how to toggle the hotkeys on and off, superscan, the document breaks, and how to quit the program. That might be all you ever want to use. You can still use the mouse.
+</p>
+<h2><a name="S1"></a>Section 1: General Hotkeys</h2>
+<h3><a name="S1.1"></a>1.1 Run</h3>
+<table border=0 cellpadding=4 cellspacing=4>
+<tr><td><font color="#ff0000"><b>
+ZQ
+</b></font></td>
+<td>
+quit
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+ZZ
+</b></font></td>
+<td>
+"super-quit" - exit hotkeys, close twain driver and iproscan
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+Win-[
+</b></font></td>
+<td>
+toggle hotkeys on / off
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+\
+</b></font></td>
+<td>
+toggle Super-scan on / off. When on, affected hotkeys will also scan, and spacebar will add a doc break and scan.
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+C-s
+</b></font></td>
+<td>
+repeat startup - DO THIS AFTER STARTING A DIFFERENT BATCH OR YOUR HOTKEYS WON'T WORK
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+A-s
+</b></font></td>
+<td>
+start scan (ie start TWAIN driver)
+</td></tr>
+</table>
+<h3><a name="S1.2"></a>1.2 Help</h3>
+<table border=0 cellpadding=4 cellspacing=4>
+<tr><td><font color="#ff0000"><b>
+?
+</b></font></td>
+<td>
+display help
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+C-/
+</b></font></td>
+<td>
+display help as plain text
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+w?
+</b></font></td>
+<td>
+display scanner-specific help
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+v
+</b></font></td>
+<td>
+display version
+</td></tr>
+</table>
+<h2><a name="S2"></a>Section 2: Scanner Driver Hotkeys</h2>
+<h3><a name="S2.1"></a>2.1 Scan</h3>
+<table border=0 cellpadding=4 cellspacing=4>
+<tr><td><font color="#ff0000"><b>
+Space
+</b></font></td>
+<td>
+scan - ADDS A DOC BREAK WHEN SUPERSCAN IS ON! (use n to avoid this)
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+S-Space
+</b></font></td>
+<td>
+preview
+</td></tr>
+</table>
+<h3><a name="S2.2"></a>2.2 Contrast</h3>
+<table border=0 cellpadding=4 cellspacing=4>
+<tr><td><font color="#ff0000"><b>
+=
+</b></font></td>
+<td>
+Brightness up by 10, Contrast down by 10
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+-
+</b></font></td>
+<td>
+Brightness down by 10, Contrast up by 10
+</td></tr>
+</table>
+<h4><a name="S2.2.1"></a>2.2.1 Numberpad keys</h4>
+<table border=0 cellpadding=4 cellspacing=4>
+<tr><td><font color="#ff0000"><b>
++
+</b></font></td>
+<td>
+Brightness up by 1, Threshold down by 1
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+-
+</b></font></td>
+<td>
+Brightness down by 1, Threshold up by 1
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+*
+</b></font></td>
+<td>
+Brightness up by 5, Threshold down by 5
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+/
+</b></font></td>
+<td>
+Brightness down by 5, Threshold up by 5
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+0-9
+</b></font></td>
+<td>
+Darkest through lightest (reasonable) settings
+</td></tr>
+</table>
+<h3><a name="S2.3"></a>2.3 Feed</h3>
+<table border=0 cellpadding=4 cellspacing=4>
+<tr><td><font color="#ff0000"><b>
+e
+</b></font></td>
+<td>
+exposure glass
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+a
+</b></font></td>
+<td>
+use adf
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+s
+</b></font></td>
+<td>
+single sided
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+t
+</b></font></td>
+<td>
+duplex top to top
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+r
+</b></font></td>
+<td>
+duplex reversed
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+,
+</b></font></td>
+<td>
+toggle Start From Scanner
+</td></tr>
+</table>
+<h3><a name="S2.4"></a>2.4 Orientation</h3>
+<table border=0 cellpadding=4 cellspacing=4>
+<tr><td><font color="#ff0000"><b>
+Up
+</b></font></td>
+<td>
+orientation 0 (rightside up)
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+Down
+</b></font></td>
+<td>
+orientation 180 (upside down)
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+Left
+</b></font></td>
+<td>
+orientation left 90
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+Right
+</b></font></td>
+<td>
+orientation right 90
+</td></tr>
+</table>
+<h3><a name="S2.5"></a>2.5 Modes</h3>
+<table border=0 cellpadding=4 cellspacing=4>
+<tr><td><font color="#ff0000"><b>
+FnKey
+</b></font></td>
+<td>
+modes 1-12
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+S-FnKey
+</b></font></td>
+<td>
+modes 13-24
+</td></tr>
+</table>
+<h2><a name="S3"></a>Section 3: Scan Panel Hotkeys</h2>
+<h3><a name="S3.1"></a>3.1 Breaks</h3>
+<table border=0 cellpadding=4 cellspacing=4>
+<tr><td><font color="#ff0000"><b>
+u
+</b></font></td>
+<td>
+source &lt;/td&gt; &lt;td&gt; 
+</td>
+<td>
+can use SuperScan
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+b
+</b></font></td>
+<td>
+box &lt;/td&gt; &lt;td&gt; 
+</td>
+<td>
+can use SuperScan
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+f
+</b></font></td>
+<td>
+folder &lt;/td&gt; &lt;td&gt; 
+</td>
+<td>
+can use SuperScan
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+d
+</b></font></td>
+<td>
+parent doc &lt;/td&gt; &lt;td&gt; 
+</td>
+<td>
+can use SuperScan
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+c
+</b></font></td>
+<td>
+child &lt;/td&gt; &lt;td&gt; 
+</td>
+<td>
+can use SuperScan
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+n
+</b></font></td>
+<td>
+no doc break &lt;/td&gt; &lt;td&gt; 
+</td>
+<td>
+can use SuperScan
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+S-d
+</b></font></td>
+<td>
+sticky parent doc &lt;/td&gt; &lt;td&gt; 
+</td>
+<td>
+can use SuperScan
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+S-c
+</b></font></td>
+<td>
+sticky child doc &lt;/td&gt; &lt;td&gt; 
+</td>
+<td>
+can use SuperScan
+</td></tr>
+</table>
+<h3><a name="S3.2"></a>3.2 Image key</h3>
+<table border=0 cellpadding=4 cellspacing=4>
+<tr><td><font color="#ff0000"><b>
+i
+</b></font></td>
+<td>
+modify key, and suspend hotkeys
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+]
+</b></font></td>
+<td>
+increment next suffix &lt;/td&gt; &lt;td&gt; 
+</td>
+<td>
+can use SuperScan
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+[
+</b></font></td>
+<td>
+decrement next suffix &lt;/td&gt; &lt;td&gt; 
+</td>
+<td>
+can use SuperScan
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+S-]
+</b></font></td>
+<td>
+sticky suffix &lt;/td&gt; &lt;td&gt; 
+</td>
+<td>
+can use SuperScan
+</td></tr>
+</table>
+<h3><a name="S3.3"></a>3.3 Flags</h3>
+<table border=0 cellpadding=4 cellspacing=4>
+<tr><td><font color="#ff0000"><b>
+1-0
+</b></font></td>
+<td>
+hotkeys 1-10 &lt;/td&gt; &lt;td&gt; 
+</td>
+<td>
+can use SuperScan
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+A-1-0
+</b></font></td>
+<td>
+hotkeys 11-20 &lt;/td&gt; &lt;td&gt; 
+</td>
+<td>
+can use SuperScan
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+C-1-0
+</b></font></td>
+<td>
+hotkeys 21-30 &lt;/td&gt; &lt;td&gt; 
+</td>
+<td>
+can use SuperScan
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+S-1-0
+</b></font></td>
+<td>
+sticky hotkeys 1-10 &lt;/td&gt; &lt;td&gt; 
+</td>
+<td>
+can use SuperScan
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+SA-1-0
+</b></font></td>
+<td>
+sticky hotkeys 11-20 &lt;/td&gt; &lt;td&gt; 
+</td>
+<td>
+can use SuperScan
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+SC-1-0
+</b></font></td>
+<td>
+sticky hotkeys 21-30 &lt;/td&gt; &lt;td&gt; 
+</td>
+<td>
+can use SuperScan
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+g'
+</b></font></td>
+<td>
+code, and suspend hotkeys
+</td></tr>
+</table>
+<h3><a name="S3.4"></a>3.4 Go to</h3>
+<table border=0 cellpadding=4 cellspacing=4>
+<tr><td><font color="#ff0000"><b>
+go
+</b></font></td>
+<td>
+goto, and suspend hotkeys
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+k
+</b></font></td>
+<td>
+up one page in history
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+j
+</b></font></td>
+<td>
+down one page in history
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+l
+</b></font></td>
+<td>
+up one screenfull of history
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+h
+</b></font></td>
+<td>
+down one screenfull of history
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+gt
+</b></font></td>
+<td>
+go to the Top of the history window
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+gb
+</b></font></td>
+<td>
+go to the Bottom of the history window
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+gn
+</b></font></td>
+<td>
+Next 100 pages of history
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+gp
+</b></font></td>
+<td>
+Previous 100 pages of history
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+gl
+</b></font></td>
+<td>
+Last page of history
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+gf
+</b></font></td>
+<td>
+First page of history
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+g1-5
+</b></font></td>
+<td>
+Go to 1st, 2nd etc line of history window
+</td></tr>
+</table>
+<h3><a name="S3.5"></a>3.5 Change</h3>
+<table border=0 cellpadding=4 cellspacing=4>
+<tr><td><font color="#ff0000"><b>
+C-Space
+</b></font></td>
+<td>
+rescan selected page &lt;/td&gt; &lt;td&gt; 
+</td>
+<td>
+can use SuperScan
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+x
+</b></font></td>
+<td>
+delete last scanned page
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+X
+</b></font></td>
+<td>
+delete one or more pages
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+C-x
+</b></font></td>
+<td>
+mark selected page for deletion
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+C-u
+</b></font></td>
+<td>
+modify doc break of selected page to source
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+C-b
+</b></font></td>
+<td>
+modify doc break of selected page to box
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+C-f
+</b></font></td>
+<td>
+modify doc break of selected page to folder
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+C-d
+</b></font></td>
+<td>
+modify doc break of selected page to parent doc
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+C-c
+</b></font></td>
+<td>
+modify doc break of selected page to child
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+C-n
+</b></font></td>
+<td>
+modify doc break of selected page to no doc break
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+C-'
+</b></font></td>
+<td>
+add coding to selected page
+</td></tr>
+</table>
+<h3><a name="S3.6"></a>3.6 Misc</h3>
+<table border=0 cellpadding=4 cellspacing=4>
+<tr><td><font color="#ff0000"><b>
+o
+</b></font></td>
+<td>
+open import dialog and suspend hotkeys
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+O
+</b></font></td>
+<td>
+import all
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+A-o
+</b></font></td>
+<td>
+IPRO Scan options
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+PP
+</b></font></td>
+<td>
+toggle "use prep sheets"
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+PB
+</b></font></td>
+<td>
+toggle "remove blank pages"
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+PI
+</b></font></td>
+<td>
+toggle "invert images"
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+PK
+</b></font></td>
+<td>
+toggle "deskew"
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+PO
+</b></font></td>
+<td>
+toggle "remove black border"
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+PS
+</b></font></td>
+<td>
+toggle "despeckle"
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+z
+</b></font></td>
+<td>
+toggle Zoom
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+C-Left
+</b></font></td>
+<td>
+rotate left Ipro
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+C-Right
+</b></font></td>
+<td>
+rotate right Ipro
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+S-Left
+</b></font></td>
+<td>
+sticky rotate left Ipro
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+S-Right
+</b></font></td>
+<td>
+sticky rotate right Ipro
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+S-\
+</b></font></td>
+<td>
+toggle Auto Detect Color
+</td></tr>
+</table>
+<h2><a name="S4"></a>Section 4: Specialty Hotkeys</h2>
+<h3><a name="S4.1"></a>4.1 Macros</h3>
+<table border=0 cellpadding=4 cellspacing=4>
+<tr><td><font color="#ff0000"><b>
+q
+</b></font></td>
+<td>
+run a q macro. Available macros are a-z, 0-9, and the characters []_?@#$
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+m
+</b></font></td>
+<td>
+run an m macro. Available macros are a-z, 0-9, and the characters []_?@#$
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+p
+</b></font></td>
+<td>
+run a p macro. Available macros are a-z, 0-9, and the characters []_?@#$
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+Win-q
+</b></font></td>
+<td>
+edit macros. RUN Win-r AFTER CHANGING MACROS TO MAKE THE NEW ONES TAKE EFFECT.
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+Win-s
+</b></font></td>
+<td>
+import a standard set of macros, overwriting current macros
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+Win-i
+</b></font></td>
+<td>
+import a custom set of macros, overwriting current macros
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+Win-e
+</b></font></td>
+<td>
+export a custom set of macros
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+Win-o
+</b></font></td>
+<td>
+show macro library in Windows Explorer
+</td></tr>
+</table>
+<h3><a name="S4.2"></a>4.2 Misc</h3>
+<table border=0 cellpadding=4 cellspacing=4>
+<tr><td><font color="#ff0000"><b>
+w
+</b></font></td>
+<td>
+run a driver command. Available commands are a-z, 0-9 and the characters []_?@#$
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+/
+</b></font></td>
+<td>
+refresh import window
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+A-x
+</b></font></td>
+<td>
+delete all in import directory
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+A-b
+</b></font></td>
+<td>
+show the current batch directory in Windows Explorer.
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+.
+</b></font></td>
+<td>
+repeat last command line - bash, console or cmd in that order
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+'
+</b></font></td>
+<td>
+pass text to command line shell
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+:
+</b></font></td>
+<td>
+pass control to command line shell and suspend hotkeys
+</td></tr>
+</table>
+<h2><a name="S5"></a>Section 5: Debugging Tools</h2>
+<table border=0 cellpadding=4 cellspacing=4>
+<tr><td><font color="#ff0000"><b>
+Win-r
+</b></font></td>
+<td>
+reload script
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+V
+</b></font></td>
+<td>
+show a bunch of debugging information
+</td></tr>
+</table>
+<h2><a name="S6"></a>Section 6: Ricoh mp1350 Hotkeys</h2>
+<table border=0 cellpadding=4 cellspacing=4>
+<tr><td><font color="#ff0000"><b>
+wh
+</b></font></td>
+<td>
+display driver's built-in help
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+ws
+</b></font></td>
+<td>
+save mode
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+w1-5
+</b></font></td>
+<td>
+select 1st to 5th visible scan mode
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+w9
+</b></font></td>
+<td>
+scroll scan mode bar to left
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+w0
+</b></font></td>
+<td>
+scroll scan mode bar to right
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+we
+</b></font></td>
+<td>
+export (save) all mode settings for scan driver
+</td></tr>
+<tr><td><font color="#ff0000"><b>
+wi
+</b></font></td>
+<td>
+import (load) all mode settings for scan driver
+</td></tr>
+</table>
+
+<hr><address></address></body>
+</html>

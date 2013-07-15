@@ -1,0 +1,13 @@
+Loop {
+    WinWait, RICOH Scanner Driver Ver.4, Clear Misfeed
+    IfWinNotActive, RICOH Scanner Driver Ver.4, Clear Misfeed, WinActivate, RICOH Scanner Driver Ver.4, 
+    WinWaitActive, RICOH Scanner Driver Ver.4, Clear Misfeed
+    MouseClick, left,  95,  84
+    Sleep, 100
+    WinWait, Scan Error, 
+    IfWinNotActive, Scan Error, , WinActivate, Scan Error, 
+    WinWaitActive, Scan Error, 
+    MouseClick, left,  173,  84
+    Sleep, 100
+    Send, !s
+}
