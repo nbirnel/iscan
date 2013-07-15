@@ -1,2 +1,15 @@
-drivers/RicohPRO1357ex/multi-machine-installer.bat
+You'll need to install Autohotkey for this to work
+
+http:\\www.autohotkey.com\download\AutoHotkeyInstall.exe
+
+You may wish to edit usr\iscan_rc.ahk for some handy network support.
+
+Then run installer.bat in the appropriate driver directory, eg:
+  drivers\RicohPRO1357ex\installer.bat
+
+Or edit computers.txt in the appropriate driver directory, then
+run multi-machine-installer.bat, eg:
+  drivers\RicohPRO1357ex\computers.txt
+  drivers\RicohPRO1357ex\multi-machine-installer.bat
+
 
